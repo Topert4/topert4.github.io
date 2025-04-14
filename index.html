@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Topert4 Skill Tree</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #0d0d0d;
+      color: #00ff99;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    .tree {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .branch {
+      margin-bottom: 15px;
+    }
+
+    .branch > summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #33ffff;
+    }
+
+    ul {
+      list-style-type: "⤷ ";
+      padding-left: 20px;
+    }
+
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Topert4's Skill Tree</h1>
+
+  <div class="tree">
+
+    <details class="branch" open>
+      <summary>💻 Web Development</summary>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript (DOM, Fetch API)</li>
+        <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+        <li><a href="https://vuejs.org/" target="_blank">Vue</a></li>
+      </ul>
+    </details>
+
+    <details class="branch" open>
+      <summary>🔐 Cybersecurity</summary>
+      <ul>
+        <li>Linux 基础</li>
+        <li>信息收集 Recon</li>
+        <li>漏洞利用 Exploitation</li>
+        <li>Wireshark / Burp Suite</li>
+      </ul>
+    </details>
+
+    <details class="branch">
+      <summary>📦 DevOps & Tools</summary>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>Docker & Containerization</li>
+        <li>CI/CD 基础</li>
+      </ul>
+    </details>
+
+    <details class="branch">
+      <summary>🧪 渗透测试实践</summary>
+      <ul>
+        <li><a href="https://tryhackme.com/" target="_blank">TryHackMe</a></li>
+        <li><a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a></li>
+        <li>漏洞靶机分析</li>
+      </ul>
+    </details>
+
+  </div>
+
+  <footer>
+    Hosted on <a href="https://github.com/Topert4" target="_blank">GitHub Pages</a> • © 2025 Topert4
+  </footer>
+</body>
+</html>
