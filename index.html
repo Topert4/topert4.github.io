@@ -1,142 +1,172 @@
+
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Topert4 极简风 $ 备忘录 </title>
-  <style>
-    body {
-      font-family: monospace;
-      background-color: #0d0d0d;
-      color: #00ff99;
-      padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiTeErtHac.Red — 进攻性 红队 私密团体</title>
+    <style>
+        body {
+            background: #101012;
+            color: #ff2828;
+            font-family: 'Fira Mono', 'Courier New', monospace;
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-    h1 {
-      text-align: center;
-      color: #00ffcc;
-    }
+        .container {
+            max-width: 730px;
+            margin: 40px auto;
+            padding: 32px 16px;
+            background: rgba(20, 20, 24, 0.985);
+            border: 2px solid #d10015;
+            box-shadow: 0 0 32px #3a0d0b77;
+            border-radius: 10px;
+        }
 
-    .tree {
-      margin: 0;
-      padding-left: 20px;
-    }
+        .ascii-logo {
+            color: #ff2828;
+            white-space: pre;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 0 20px 0;
+            line-height: 1.15;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff2828;
+            animation: blinkred 1.3s steps(1) infinite;
+        }
 
-    .branch {
-      margin-bottom: 15px;
-    }
+        @keyframes blinkred {
+            60% {
+                opacity: 1;
+            }
 
-    .branch > summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: #33ffff;
-    }
+            70% {
+                opacity: 0.85;
+            }
 
-    ul {
-      list-style-type: "⤷ ";
-      padding-left: 20px;
-    }
+            80% {
+                opacity: 0.5;
+            }
 
-    a {
-      color: #00ccff;
-      text-decoration: none;
-    }
+            100% {
+                opacity: 1;
+            }
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        h1 {
+            text-align: center;
+            margin: 16px 0 12px 0;
+            font-size: 2.3em;
+            letter-spacing: 2px;
+            color: #ff2828;
+            text-shadow: 0 2px 8px #4d0406, 0 0 3px #ff282855;
+        }
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+        .subtitle {
+            text-align: center;
+            color: #fa5656;
+            font-size: 1.2em;
+            margin-bottom: 37px;
+            font-weight: 500;
+        }
+
+        .section {
+            background: #1a1a1e;
+            box-shadow: 0 0 11px #7c131333;
+            border-radius: 6px;
+            margin-bottom: 27px;
+            padding: 22px 24px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.15em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #ff2828;
+            text-shadow: 0 0 2px #d10015;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0 0 0 19px;
+        }
+
+        li {
+            margin: 0 0 8px 0;
+        }
+
+        .contacts {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        .contacts a {
+            color: #ff2828;
+            text-decoration: underline wavy #ff2828;
+            transition: color 0.3s;
+        }
+
+        .contacts a:hover {
+            color: #ae0c0c;
+            background: #ff282825;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #7a7a7a;
+            text-align: center;
+            font-size: 0.95em;
+            letter-spacing: 1.2px;
+            user-select: none;
+        }
+    </style>
 </head>
+
 <body>
-  <h1> 🎯 2025  Topert4 🕸 依赖关系</h1>
+    <div class="container">
+        <div class="ascii-logo">                        
+        </div>
+                <h1>FiTeErtHac.RED</h1>
+                <div class="subtitle">红队 — 进攻性安全。纯粹的技能。真实的对手.</div>
+                <div class="section">
+                    <h2>// // 我们的简介</h2>
+                        <ul>
+                        <li>✔ 复杂的红队／对抗模拟行动.</li>
+                        <li>✔ 渗透测试（Web、基础设施、社会工程）.</li>
+                        <li>✔ 模拟APT组织及针对客户的网络攻击场景.</li>
+                        <li>✔ 安全防护功能的检测、模拟与规避（EDR、杀毒软件、SIEM）</li>
+                        <li>✔ 通过场景化攻击演练进行蓝队／事件响应培训（桌面演练和实操）</li>
+                        <li>✔ 为团队任务研发专有工具和漏洞利用.</li>
+                        <li>✔ 自主开发概念验证（PoC）、漏洞利用与工具.</li>
+                        <li>✔ 一群擅长恶意软件研究和分析与追求一切免费的逆向技术.</li>
+                        </ul>
 
-  <div class="tree">
-
-     <details class="branch" open>
-      <summary> 👥Topert4.com 📢 频道  </summary>
-      <ul>
-        <li><a href="https://t.me/topert4/" target="_blank">📢 [ Topert4—频道 ] </a></li>
-        <li><a href="https://t.me/+SzVBSknAKiZhYTc1" target="_blank">👥 [ 黑客技术开放性交流群 ]</a></li>
-
-      </ul>
-    </details>
-
-
-    <details class="branch" open>
-      <summary>🐍 Python⌨ 2025年运营发展计划 <a href="https://t.me/+9BjmwS7fRBY0YTU9" target="_blank"> [📢 频道地址 ]</a> </summary>
-      <ul>
-        <li>⌨ 2025 py频道第一季度 低级目标👇🏻👇🏻</li>
-      </ul>
-        <li> ↪️3个月内以黑客技术为目标,掌握Pyhton语言入门基础.并入门“编程思维” ↩️</li>
-        <li>  <a href="https://t.me/topert4/182" target="_blank">🧭 [ Pyhton — 2025 第一季度 [ 时间线 ]</a>  </li>
-    
-   
-       <ul>
-        <li>⌨2025-2026年 py频道第二季度 中级目标👇🏻👇🏻</li>
-       </ul>
-        <li> ↪️1年内成为熟练的 Python 程序员 ↩️</li>
-       <ul>
-        <li>⌨2026年 py频道第三季度  高级目标👇🏻👇🏻</li>
-
-      </ul>
-          <li>*</li>
-    </details>
-
-    <details class="branch" open>
-      <summary>🐧 Linux <a href="https://t.me/+dMZK8xXex9w1MjQ1" target="_blank"> [ 📢 频道地址 ]</a>  </summary>
-      <ul>
-        <li>🖥第一季度</li>
-        <li>🖥第二季度</li>
-        <li>🖥第三季度</li>
-        <li>🖥第四季度</li>
-      </ul>
-    </details>
-
-    <details class="branch">
-      <summary>📦 杂货箱 </summary>
-      <ul>
-        <li>环境</li>
-        <li>匿名</li>
-        <li>工具</li>
-        <li>红队</li>
-        <li>付费</li>
-      </ul>
-    </details>
-
-
-    <details class="branch">
-      <summary>📩 公钥|🔑哈希值 </summary>
-      <ul>
-        <li><a href="https://www.baidu.com/" target="_blank">📩 Ghos9527</a>🔐</li>
-        <li><a href="https://www.baidu.com/" target="_blank">📩 Bl0ckDev</a>🔐</li>
-        <li><a href="https://www.baidu.com/" target="_blank">📩 Lyxysgtfz</a>🔐</li>
-        <li><a href="https://www.baidu.com/" target="_blank">📩 百度</a>🔐</li>
-        <li><a href="https://www.baidu.com/" target="_blank">📩 谷歌</a>🔐</li>
-
-      </ul>
-    </details>
-
-  <details class="branch" open>
-      <summary>🐧 灰 <a href="https:" target="_blank"> [ 不公开 ]</a>  </summary>
-      <ul>
-        <li>🖥</li>
-        <li>🖥</li>
-        <li>🖥</li>
-        <li>🖥</li>
-      </ul>
-    </details>
-
-  </div>
-
-  <footer>
-    Telegram on <a href="https://t.me/topert4" target="_blank">@Topert4 </a> • © 2025 Ghos9527
-  </footer>
+                </div>
+                <div class="section">
+                    <h2>// 我们的宣言</h2>
+                        <ul>
+                            <li><strong>"没有什么是安全的。” — 凯文·米特尼克</li>
+                            <li><strong>"掌控你的系统，否则别人就会控制它们."</strong></li>
+                            <li><strong>"想要防御，就要学会像攻击者一样思考."</strong></li>
+                        </ul>
+                </div>
+                <div class="section">
+                    <h2>// 联系方式</h2>
+                    <div style="margin-top:7px;">
+                        <li><span style="user-select:all;">Discord：https://discord.gg/nGXPH95aNU - 私密技术频道.</span></li>
+                        <li><span style="user-select:all;">Telegram：https://t.me/FITeErtHac -  我们的电报公开频道.</span></li>
+                    </div>
+                </div>
+                <footer>
+                    &copy; 2026 FiTeErtHac.Red / 进攻性 红队 私密团体<br>
+                    <span style="color:#660000;"># 合法的进攻性安全红队</span>
+                </footer>
+        </div>
 </body>
+
 </html>
